@@ -4,7 +4,7 @@ import logging.handlers #Required for some LoggingHandler
 import os
 
 LOG_FILE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "logging_example.log")
-LOG_FILE_LEVEL = 'INFO'
+LOG_FILE_LEVEL = logging.INFO
 
 parser = argparse.ArgumentParser(description='Logging with more handler example')
 parser.add_argument(
